@@ -1,2 +1,12 @@
-git config --global user.name "l3ninrajav3l" 
-git config --global user.email "l3ninrajav3l@hotmail.com" 
+#Git config
+
+git config --global user.name "user name " 
+git config --global user.email "user email " 
+
+mkdir git_dir
+git init
+git add files_list
+git commit -m "Commit message"
+
+git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
