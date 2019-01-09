@@ -1,0 +1,13 @@
+#Check SSH keys
+ls -al ~/.ssh
+
+#Generate SSH keys 
+ssh-keygen --help
+ssh-keygen -t rsa -b 4096 -C "comment"
+eval "$(ssh-agent -s)"
+vi ~/.ssh/config
+ls ~/.ssh/
+vi ~/.ssh/config
+ssh-add --help
+ssh-add -K ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub

@@ -1,0 +1,15 @@
+ brew install gnupg
+ sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+ brew install gnupg
+
+ # verify if gpg keys exist
+ gpg --list-secret-keys --keyid-format LONG
+ gpg --version
+ 
+ #Generate GPG keys
+ gpg --full-generate-key
+ gpg --list-secret-keys --keyid-format LONG
+
+# export the public key 
+ gpg --armor --export $key_id
+ 
