@@ -12,4 +12,7 @@
 
 # export the public key 
  gpg --armor --export $key_id
+
+ # Use a signed commit with the GPG key
+ git commit -S -m "Signed Commit"
  
