@@ -29,3 +29,5 @@ git log --oneline --decorate
 #branching
 git branch toolset
 git branch -d toolset
+
+git push --set-upstream origin toolset
