@@ -31,3 +31,12 @@ git branch toolset
 git branch -d toolset
 
 git push --set-upstream origin toolset
+
+#After the pull request
+git fetch origin
+git checkout -b toolset origin/toolset
+git merge master
+
+git checkout master
+git merge --no-ff toolset
+git push origin master
