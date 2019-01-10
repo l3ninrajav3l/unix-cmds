@@ -1,3 +1,6 @@
+# Install Home brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 #select and set java versions
 /usr/libexec/java_home -V
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_191`
@@ -26,7 +29,7 @@ export PATH=${PATH}:${M2_HOME}/bin
 brew info gradle
 brew install gradle
 
-#verify gradle install 
+#verify gradle install
 
 which gradle
 gradle -v
@@ -34,7 +37,7 @@ gradle -v
 
 #Mysql
 
-brew info mysql 
+brew info mysql
 brew install mysql
 
 #Start and stop mysql
@@ -53,7 +56,6 @@ mysql -u root -p
 
 \q
 
-#Workbench 
+#Workbench
 
 brew cask install mysqlworkbench
-
