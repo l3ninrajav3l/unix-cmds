@@ -4,10 +4,15 @@ ls -al ~/.ssh
 #Generate SSH keys 
 ssh-keygen --help
 ssh-keygen -t rsa -b 4096 -C "comment"
+
 eval "$(ssh-agent -s)"
 vi ~/.ssh/config
 ls ~/.ssh/
 vi ~/.ssh/config
 ssh-add --help
+
+#add the private key 
 ssh-add -K ~/.ssh/id_rsa
+
+# add the public copy to the other end
 pbcopy < ~/.ssh/id_rsa.pub
