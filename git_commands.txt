@@ -1,7 +1,7 @@
 #Git config
 
-git config --global user.name "user name " 
-git config --global user.email "user email " 
+git config --global user.name "user name "
+git config --global user.email "user email "
 
 mkdir git_dir
 git init
@@ -23,3 +23,11 @@ git push
 #discard local changes
 git checkout ssh-keys.txt
 
+#Simple logging
+git log --oneline --decorate
+
+#branching
+git branch toolset
+git branch -d toolset
+
+git push --set-upstream origin toolset
