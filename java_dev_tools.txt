@@ -30,3 +30,30 @@ brew install gradle
 
 which gradle
 gradle -v
+
+
+#Mysql
+
+brew info mysql 
+brew install mysql
+
+#Start and stop mysql
+mysql.server start
+mysql.server stop
+
+#launch at startup
+brew serives start mysql
+
+#Secure mysql installation
+
+mysql_secure_installation
+
+#login and quit
+mysql -u root -p
+
+\q
+
+#Workbench 
+
+brew cask install mysqlworkbench
+
