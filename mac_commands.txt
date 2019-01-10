@@ -18,6 +18,8 @@ git add ssh-keys.txt
 
 #add a signed commit
 git commit -S -m "Signed commit"
+git push
 
-#remove local changes
+#discard local changes
+git checkout ssh-keys.txt
 
