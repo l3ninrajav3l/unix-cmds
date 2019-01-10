@@ -13,6 +13,14 @@
 # export the public key 
  gpg --armor --export $key_id
 
+# setup GPG signing key with Git
+git config --global user.signingkey $key_id
+
+test -r ~/.bash_profile && echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
+echo 'export GPG_TTY=$(tty)' >> ~/.profile
+source ~/.profile
+source ~/.bash_profile
+
  # Use a signed commit with the GPG key
  git commit -S -m "Signed Commit"
  
